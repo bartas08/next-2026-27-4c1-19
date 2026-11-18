@@ -26,6 +26,8 @@ export default function RootLayout({ children }) {
 
                   if (shouldBeDark) {
                     document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
                   }
                 } catch (e) {}
               })();
@@ -43,9 +45,7 @@ export default function RootLayout({ children }) {
             </nav>
           </header>
 
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
         </CounterProvider>
       </body>
     </html>
