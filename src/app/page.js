@@ -15,9 +15,9 @@ export default function HomePage() {
     <main style={{ padding: '2rem' }}>
       <h1>Witaj na naszej stronie głównej!</h1>
       <p>To jest pierwsza strona stworzona w Next.js z App Routerem.</p>
-      <Link href="/about">Przejdź do strony O nas</Link>
-      <Link href="/style-guide"> Zobacz Style Guide</Link>
-      
+      <div><Link href="/about">Przejdź do strony O nas</Link></div>
+      <div><Link href="/style-guide"> Zobacz Style Guide</Link></div>
+      <div><Link href="/szukaj"> Szukaj</Link></div>
       <Counter ></Counter>
       <GreetingForm></GreetingForm>
       <CounterWithLog></CounterWithLog>
